@@ -41,6 +41,9 @@ vim.keymap.set("n", "<c-l>", ":wincmd l<cr>", opts)
 -- Keep last yanked
 vim.keymap.set("v", "p", '"_dP', opts)
 
+-- Break to newline
+vim.keymap.set("n", "<c-i>", "i<cr><Esc>", opts)
+
 -- Diagnostics
 vim.keymap.set("n", "[d", function()
 	vim.diagnostic.jump({ count = -1, float = true })
