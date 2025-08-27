@@ -33,4 +33,5 @@ require("lazy").setup({
 	require("plugins.misc"),
 	require("plugins.linters"),
 	require("plugins.rust"),
+	require("plugins.dapui"),
 })
